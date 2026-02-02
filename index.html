@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спортен Свят | Твоят път към успеха</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">СПОРТЕН <span>СВЯТ</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Начало</a></li>
+            <li><a href="#promotions">Промоции</a></li>
+            <li><a href="#products">Продукти</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Достигни своя лимит</h1>
+            <p>Най-новите спортни новини и екипировка на едно място.</p>
+            <a href="#promotions" class="btn-primary">Виж Промоциите</a>
+        </div>
+    </header>
+
+    <section id="promotions" class="promo-section">
+        <h2 class="section-title">Горещи <span>Промоции</span></h2>
+        <div class="promo-container">
+            <div class="promo-card">
+                <div class="discount-badge">-30%</div>
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=500" alt="Маратонки">
+                <h3>Nike Air Max Sport</h3>
+                <p class="old-price">280.00 лв.</p>
+                <p class="new-price">196.00 лв.</p>
+                <div class="timer">Остават: 12:44:02</div>
+                <button class="btn-buy">Купи Сега</button>
+            </div>
+
+            <div class="promo-card featured">
+                <div class="discount-badge">-50%</div>
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=500" alt="Фитнес">
+                <h3>Годишна Карта</h3>
+                <p class="old-price">600.00 лв.</p>
+                <p class="new-price">300.00 лв.</p>
+                <div class="timer">Остават: 05:20:10</div>
+                <button class="btn-buy">Вземи Офертата</button>
+            </div>
+
+            <div class="promo-card">
+                <div class="discount-badge">-20%</div>
+                <img src="https://images.unsplash.com/photo-1583454110551-21f2fa20019b?q=80&w=500" alt="Протеин">
+                <h3>Whey Protein 2kg</h3>
+                <p class="old-price">120.00 лв.</p>
+                <p class="new-price">96.00 лв.</p>
+                <div class="timer">Остават: 08:15:45</div>
+                <button class="btn-buy">Купи Сега</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="cookie-banner" class="cookie-box">
+        <p>Този сайт използва бисквитки. Приемате ли да пазим вашата информация за по-добро изживяване?</p>
+        <div class="cookie-btns">
+            <button onclick="acceptCookies()" class="cookie-accept">Да, приемам</button>
+            <button onclick="rejectCookies()" class="cookie-reject">Не</button>
+        </div>
+    </div>
+
+    <div id="ai-chat-container" class="chat-container">
+        <div class="chat-header" onclick="toggleChat()">
+            <span>🤖 AI Асистент</span>
+            <button id="close-chat" style="background:none; border:none; color:white; cursor:pointer;">✖</button>
+        </div>
+        <div id="chat-body" class="chat-body">
+            <p class="bot-msg">Здравей! Аз съм AI на Спортен свят. Как мога да ти помогна?</p>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Пиши тук...">
+            <button onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+
+    <div id="chat-icon" class="chat-icon" onclick="toggleChat()">
+        💬
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
